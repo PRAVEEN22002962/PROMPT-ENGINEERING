@@ -1,63 +1,112 @@
-# Aim:	Comprehensive Report on the Fundamentals of Generative AI and Large Language Models (LLMs)
-Experiment:
-Develop a comprehensive report for the following exercises:
-1.	Explain the foundational concepts of Generative AI. 
-2.	Focusing on Generative AI architectures. (like transformers).
-3.	Generative AI applications.
-4.	Generative AI impact of scaling in LLMs.
+## EXP 1 - Comprehensive Report on the Fundamentals of Generative AI and Large Language Models (LLMs) 
+Large language models evolved alongside deep-learning neural networks and are critical to generative AI. Here's a first look, including the top LLMs and what they're used for today. 
+![image](https://github.com/user-attachments/assets/1c7cd00e-ff8c-4232-aa1b-245efdb21557)
 
-# Algorithm: Step 1: Define Scope and Objectives
-1.1 Identify the goal of the report (e.g., educational, research, tech overview)
-1.2 Set the target audience level (e.g., students, professionals)
-1.3 Draft a list of core topics to cover
-Step 2: Create Report Skeleton/Structure
-2.1 Title Page
-2.2 Abstract or Executive Summary
-2.3 Table of Contents
-2.4 Introduction
-2.5 Main Body Sections:
-•	Introduction to AI and Machine Learning
-•	What is Generative AI?
-•	Types of Generative AI Models (e.g., GANs, VAEs, Diffusion Models)
-•	Introduction to Large Language Models (LLMs)
-•	Architecture of LLMs (e.g., Transformer, GPT, BERT)
-•	Training Process and Data Requirements
-•	Use Cases and Applications (Chatbots, Content Generation, etc.)
-•	Limitations and Ethical Considerations
-•	Future Trends
-2.6 Conclusion
-2.7 References
-________________________________________
-Step 3: Research and Data Collection
-3.1 Gather recent academic papers, blog posts, and official docs (e.g., OpenAI, Google AI)
-3.2 Extract definitions, explanations, diagrams, and examples
-3.3 Cite all sources properly
-________________________________________
-Step 4: Content Development
-4.1 Write each section in clear, simple language
-4.2 Include diagrams, figures, and charts where needed
-4.3 Highlight important terms and definitions
-4.4 Use examples and real-world analogies for better understanding
-________________________________________
-Step 5: Visual and Technical Enhancement
-5.1 Add tables, comparison charts (e.g., GPT-3 vs GPT-4)
-5.2 Use tools like Canva, PowerPoint, or LaTeX for formatting
-5.3 Add code snippets or pseudocode for LLM working (optional)
-________________________________________
-Step 6: Review and Edit
-6.1 Proofread for grammar, spelling, and clarity
-6.2 Ensure logical flow and consistency
-6.3 Validate technical accuracy
-6.4 Peer-review or use tools like Grammarly or ChatGPT for suggestions
-________________________________________
-Step 7: Finalize and Export
-7.1 Format the report professionally
-7.2 Export as PDF or desired format
-7.3 Prepare a brief presentation if required (optional)
+  
+Large language models (LLMs) such as GPT, Bard, and Llama have caught the public’s imagination and garnered a wide variety of reactions. They are also expected to grow dramatically in the coming years. According to Dimension Market Research, The Global LLM market is expected to reach $140.8 billion by 2033 at a CAGR of 40.7%. 
+This article looks behind the hype to help you understand the origins of large language models, how they’re built and trained, and the range of tasks they are specialized for. We’ll also look at the most popular LLMs in use today. 
+What is a large language model? 
+Language models go back to the early 20th century, but large language models (LLMs) emerged with a vengeance after neural networks were introduced. The Transformer deep neural network architecture, introduced in 2017, was particularly instrumental in the evolution from language models to LLMs. 
+Large language models are useful for a variety of tasks, including text generation from a descriptive prompt, code generation and code completion, text summarization, translating between languages, and text-to-speech and speech-to-text applications. 
+0 seconds of 9 minutes, 11 secondsVolume 0% 
+  
+LLMs trends to watch: 
+1.	Multimodality: LLMs that can seamlessly handle text, images, audio, and video are likely to be in high demand in 2025. 
+2.	Efficiency:: Models that can run efficiently on devices with limited resources (like smartphones) will be crucial for wider adoption. 
+3.	>Safety and Ethics:: Responsible AI development will be a major focus, with LLMs that are less prone to bias and harmful outputs gaining prominence. 
+4.	Specialization: We may see more LLMs that are specialized for specific tasks, such as code generation, translation, or scientific research. 
+5.	>Specialization: We may see more LLMs that are specialized for specific tasks, such as code generation, translation, or scientific research. 
+LLMs also have drawbacks, at least in their current developmental stage. Generated text is usually mediocre, and sometimes downright bad. LLMs are known to invent facts, called hallucinations, which might seem reasonable if you don’t know better. Language translations are rarely 100% accurate unless they’ve been vetted by a native speaker, which is usually only done for common phrases. Generated code often has bugs, and sometimes has no hope of running. While LLMs are usually fine-tuned to avoid making controversial statements or recommending illegal acts, it is possible to breach these guardrails using malicious prompts. 
+Training large language models requires at least one large corpus of text. 
+Training examples include the 1B Word Benchmark, Wikipedia, the Toronto Books Corpus, the Common Crawl dataset, and public open source GitHub repositories. Two potential problems with large text datasets are copyright infringement and garbage. Copyright infringement is currently the subject of multiple lawsuits. Garbage, at least, can be cleaned up; an example of a cleaned dataset is the Colossal Clean Crawled Corpus (C4), an 800GB dataset based on the Common Crawl dataset. 
+The role of parameters in LLMs: 
+Large language models are different from traditional language models in that they use a deep learning neural network, a large training corpus, and they require millions or more parameters or weights for the neural network. 
+Along with at least one large training corpus, LLMs require large numbers of parameters, also known as weights. The number of parameters grew over the years, until it didn’t. ELMo (2018) has 93.6 million parameters; BERT (2018) was released in 100-million and 340-million parameter sizes; GPT (2018) uses 117 million parameters; and T5 (2020) has 220 million parameters. GPT-2 (2019) has 1.6 billion parameters; GPT-3 (2020) uses 175 billion parameters; and PaLM (2022) has 540 billion parameters. GPT-4 (2023) has 1.76 trillion parameters. 
+In simpler terms: Imagine an LLM as a vast network of interconnected switches. Each switch has a setting (the parameter) that determines how it responds to input. During training, these switches are adjusted to optimize the network’s overall performance in understanding and generating language.  
+More parameters make a model more accurate, but models with higher parameters also require more memory and run more slowly. In 2023, we’ve started to see some relatively smaller models released at multiple sizes: for example, Llama 2 comes in sizes of 7 billion, 13 billion, and 70 billion, while Claude 2 has 93-billion and 137-billion parameter sizes. 
+Ask 
+However, it’s not just about the number of parameters. Other factors also play a crucial role: 
+•	The quality of the training data: Even a model with many parameters will perform poorly if it’s trained on biased or low-quality data.   
+•	The architecture of the model: The way the parameters are organized and connected also affects the model’s capabilities.  
+•	The training process itself: Effective training techniques are essential for optimizing the parameters.  
+While parameters are essential to LLMs, they are the learned knowledge that allows the models to understand and generate human-like text. The number of parameters is important, but it’s just one that contribute to an LLM’s overall performance. 
+A history of AI models for text generation 
+Language models go back to Andrey Markov, who applied mathematics to poetry in 1913. Markov showed that in Pushkin’s Eugene Onegin, the probability of a character appearing depended on the previous character, and that, in general, consonants and vowels tended to alternate. Today, Markov chains are used to describe a sequence of events in which the probability of each event depends on the state of the previous one. 
+Markov’s work was extended by Claude Shannon in 1948 for communications theory, and again by Fred Jelinek and Robert Mercer of IBM in 1985 to produce a language model based on cross-validation (which they called deleted estimates), and applied to real-time large-vocabulary speech recognition. Essentially, a statistical language model assigns probabilities to sequences of words. 
+To quickly see a language model in action, just type a few words into Google Search, or a text message app on your phone, with auto-completion turned on. 
+In 2000, Yoshua Bengio and co-authors published a paper detailing a neural probabilistic language model in which neural networks replace the probabilities in a statistical language model, bypassing the curse of dimensionality and improving word predictions over a smoothed trigram model (then the state of the art) by 20% to 35%. The idea of feed-forward auto-regressive neural network models of language is still used today, although the models now have billions of parameters and are trained on extensive corpora; hence the term “large language model.” 
+Language models have continued to get bigger over time, with the goal of improving performance. But such growth has downsides. The 2021 paper, On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?, questions whether we are going too far with the larger-is-better trend. The authors suggest weighing the environmental and financial costs first and investing resources into curating and documenting datasets rather than ingesting everything on the web. 
+Language models and LLMs explained: 
+Current language models have a variety of tasks and goals and take various forms. For example, in addition to the task of predicting the next word in a document, language models can generate original text, classify text, answer questions, analyze sentiment, recognize named entities, recognize speech, recognize text in images, and recognize handwriting. Customizing language models for specific tasks, typically using small to medium-sized supplemental training sets, is called fine-tuning. 
+Some of the intermediate tasks that go into language models are the following: 
+•	Segmentation (of the training corpus into sentences):  LLMs are trained on vast amounts of text, which needs to be broken down into individual sentences for the model to learn the structure and relationships between words within sentences.  Segmentation is the process of identifying sentence boundaries (e.g., using punctuation). 
+•	Word tokenization: Tokenization breaks down the text into individual units (tokens), which can be words, sub-word units (like parts of words), or punctuation marks.  This is a crucial first step before feeding text to an LLM. 
+•	Stemming:  Reduces words to their root form (e.g., “running” to “run”). While historically important in NLP, stemming is less crucial for modern LLMs because they often handle morphological variations implicitly through their training.  LLMs are often trained on raw text or use sophisticated tokenization that handles these variations. 
+•	Lemmatizing (conversion to the root word):  Similar to stemming, but more sophisticated. Lemmatization uses dictionaries and grammatical rules to find the base or dictionary form of a word (e.g., “running” to “run”).  Like stemming, it’s less critical for LLMs as they are good at dealing with different forms of the same word. 
+•	(Part of speech) tagging: Identifying the grammatical role of each word in a sentence (e.g., noun, verb, adjective).  While LLMs can often infer POS tags implicitly, having explicit POS tags as input can sometimes be useful for specific tasks or fine-tuning. 
+•	Stopword Identification and (possibly) Removal: Stopwords are common words (e.g., “the,” “a,” “is”) that are often removed in traditional NLP tasks to reduce noise.  For LLMs, removing stopwords is often not beneficial, as these words contribute to the meaning and structure of sentences.  LLMs generally benefit from having the full context. 
+•	Named-entity recognition (NER): Identifying and classifying named entities in text (e.g., people, organizations, locations). LLMs are very good at NER and can be used to extract this information from text.  This can be a task LLMs are fine-tuned for, or even performed through prompt engineering. 
+•	Text classification: Assigning categories or labels to text documents. LLMs can be used for text classification tasks.  You can fine-tune an LLM to classify text, or use prompt engineering to guide the model towards the desired categories. 
+•	Chunking (breaking sentences into meaningful phrases): Grouping words into phrases (e.g., noun phrases, verb phrases).  While LLMs may not explicitly use chunking as a preprocessing step, they implicitly understand phrase structure and can be prompted to extract phrases. 
+•	Coreference resolution (finding all expressions that refer to the same entity in a text): Identifying all mentions of the same entity in a text, even if they are referred to using different words or pronouns (e.g., “John,” “he,” “the CEO”). LLMs are capable of performing coreference resolution, and this is a task that can be used to improve the LLM’s understanding of relationships between entities in a text. 
+Several of these are also useful as tasks or applications in and of themselves, such as text classification. 
+Large language models are different from traditional language models in that they use a deep learning neural network and a large training corpus, and they require millions or more parameters or weights for the neural network. Training an LLM is a matter of optimizing the weights so that the model has the lowest possible error rate for its designated task. An example task would be predicting the next word at any point in the corpus, typically in a selfsupervised fashion. 
+A look at the most popular LLMs: 
+The recent explosion of large language models was triggered by the 2017 paper, Attention is All You Need, which introduced the Transformer as, “a new simple network architecture … based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.” 
+Here are some of the top large language models in use today. 
+ELMo 
+ELMo is a 2018 deep contextualized word representation LLM from AllenNLP that models both complex characteristics of word use and how that use varies across linguistic contexts. The original model has 93.6 million parameters and was trained on the 1B Word Benchmark. 
+BERT 
+BERT is a 2018 language model from Google AI based on the company’s Transformer neural network architecture. BERT was designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. The two model sizes initially used were 100 million and 340 million total parameters. The LLM uses masked language modeling (MLM), in which ~15% of tokens are “corrupted” for training. It was trained on English Wikipedia plus the Toronto Books Corpus. 
+Gemini 
+Google’s Gemini, based on its Bard technology, offers multimodal capabilities and focus on efficiency (with versions like Nano for on-device processing), Gemini is likely to be a leader in 2025. We can anticipate further enhancements in its ability to understand and generate diverse content, including code and images.  
+T5 
+The 2020 Text-To-Text Transfer Transformer (T5) model from Google synthesizes a new model based on the best transfer learning techniques from GPT, ULMFiT, ELMo, BERT, and their successors. It uses the open source Colossal Clean 
+Crawled Corpus (C4) as a pre-training dataset. The standard C4 for English is an 
+800GB dataset based on the original Common Crawl dataset. T5 reframes all NLP tasks into a unified text-to-text-format where the input and output are always text strings, in contrast to BERT-style models that can only output either a class label or a span of the input. The base T5 model has about 220 million total parameters. 
+ 
+GPT family: 
+OpenAI, an AI research and deployment company, has a mission “to ensure that artificial general intelligence (AGI) benefits all of humanity.” Of course, it hasn’t achieved AGI yet—and some AI researchers, such as machine learning pioneer Yann LeCun of Meta-FAIR, think that OpenAI’s current approach to AGI is a dead end. 
+OpenAI is responsible for the GPT family of language models. Here’s a quick look at the entire GPT family and its evolution since 2018. (Note that the entire GPT family is based on Google’s Transformer neural network architecture, which is legitimate because Google open-sourced Transformer.) 
+GPT (Generative Pretrained Transformer) is a 2018 model from OpenAI that uses about 117 million parameters. GPT is a unidirectional transformer pretrained on the Toronto Book Corpus, and was trained with a causal language modeling (CLM) objective, meaning that it was trained to predict the next token in a sequence. 
+GPT-2 is a 2019 direct scale-up of GPT with 1.5 billion parameters, trained on a dataset of 8 million web pages encompassing ~40GB of text data. OpenAI originally restricted access to GPT-2 because it was “too good” and would lead to “fake news.” The company eventually relented, although the potential social problems became even worse with the release of GPT-3. 
+GPT-3 is a 2020 autoregressive language model with 175 billion parameters, trained on a combination of a filtered version of Common Crawl, WebText2, Books1, Books2, and English Wikipedia. The neural net used in GPT-3 is similar to that of GPT-2, with a couple of additional blocks. 
+The biggest downside of GPT-3 is that it tends to “hallucinate,” meaning that it makes up facts with no discernable basis. GPT-3.5 and GPT-4 have the same problem, albeit to a lesser extent. 
+GPT-3.5 is a set of 2022 updates to GPT-3 and CODEX. The gpt-3.5-turbo model is optimized for chat but also works well for traditional completion tasks. 
+GPT-4 is a large multimodal model (accepting image and text inputs, emitting text outputs) that OpenAI claims exhibits human-level performance on some professional and academic benchmarks. GPT-4 outperformed GPT-3.5 in various simulated exams, including the Uniform Bar Exam, the LSAT, the GRE, and several AP subject exams. 
+Note that GPT-3.5 and GPT-4 performance has changed over time. A July 2023 Stanford paper identified several tasks, including prime number identification, where the behavior varied greatly between March 2023 and June 2023. 
+The latest iterations (likely beyond GPT-4 by 2025) are expected to have even greater capabilities in text generation, reasoning, and multimodal understanding (handling images, audio, etc.). Expect improvements in handling longer contexts and reducing hallucinations 
+ChatGPT and BingGPT are chatbots that were originally based on gpt-3.5-turbo and in March 2023 upgraded to use GPT-4. Currently, to access the version of ChatGPT based on GPT-4, you need to subscribe to ChatGPT Plus. The standard ChatGPT, based on GPT-3.5, was trained on data that cut off in September 2021. 
+The latest iterations (likely beyond GPT-4 in 2025) are expected to have greater capabilities in text generation, reasoning, and multimodal understanding (handling images, audio, etc.). Expect improvements in handling longer contexts and reducing hallucinations 
+BingGPT, aka “The New Bing,” which you can access in the Microsoft Edge browser, was also trained on data that cut off in 2021. When asked, the bot claims that it is constantly learning and updating its knowledge with new information from the web. 
+  
+BingGPT explains its language model and training data, as seen in the text window at the right of the screen. 
+In early March 2023, Professor Pascale Fung of the Centre for Artificial Intelligence Research at the Hong Kong University of Science & Technology gave a talk on ChatGPT evaluation. It’s well worth the hour to watch it. 
+LaMDA: 
+LaMDA (Language Model for Dialogue Applications), Google’s 2021 “breakthrough” conversation technology, is a Transformer-based language model trained on dialogue and fine-tuned to significantly improve the sensibleness and specificity of its responses. One of LaMDA’s strengths is that it can handle the topic drift that is common in human conversations. While you can’t directly access LaMDA, its impact on the development of conversational AI is undeniable as it pushed the boundaries of what’s possible with language models and paved the way for more sophisticated and human-like AI interactions. 
+PaLM: 
+PaLM (Pathways Language Model) is a dense decoder-only Transformer model from Google Research with 540 billion parameters, trained with the Pathways system. PaLM was trained using a combination of English and multilingual datasets that include high-quality web documents, books, Wikipedia, conversations, and GitHub code. Google also created a “lossless” vocabulary that preserves all whitespace (especially important for code), splits out-of-vocabulary Unicode characters into bytes, and splits numbers into individual tokens, one for each digit. 
+Google has made PaLM 2 accessible through the PaLM API and MakerSuite. This means developers can now use PaLM 2 to build their own generative AI applications. 
+PaLM-Coder is a version of PaLM 540B fine-tuned on a Python-only code dataset. 
+PaLM-E: 
+PaLM-E is a 2023 embodied (for robotics) multimodal language model from Google. The researchers began with PaLM and “embodied” it (the E in PaLM-E), by complementing it with sensor data from the robotic agent. PaLM-E is also a generally-capable vision-and-language model; in addition to PaLM, it incorporates the ViT-22B vision model. 
+Bard has been updated multiple times since its release. In April 2023 it gained the ability to generate code in 20 programming languages. In July 2023 it gained support for input in 40 human languages, incorporated Google Lens, and added text-to-speech capabilities in over 40 human languages. 
+LLaMA: 
+LLaMA (Large Language Model Meta AI) is a 65-billion parameter “raw” large language model released by Meta AI (formerly known as Meta-FAIR) in February 2023. According to Meta: 
+Training smaller foundation models like LLaMA is desirable in the large language model space because it requires far less computing power and resources to test new approaches, validate others’ work, and explore new use cases. Foundation models train on a large set of unlabeled data, which makes them ideal for fine-tuning for a variety of tasks. 
+LLaMA was released at several sizes, along with a model card that details how it was built. Originally, you had to request the checkpoints and tokenizer, but they are in the wild now: a downloadable torrent was posted on 4chan by someone who properly obtained the models by filing a request, according to Yann LeCun of Meta AI. 
 
 
 
-# Output
+Llama: 
+Llama 2 is the next generation of Meta AI’s large language model, trained between January and July 2023 on 40% more data (2 trillion tokens from publicly available sources) than LLaMA 1 and having double the context length (4096). Llama 2 comes in a range of parameter sizes—7 billion, 13 billion, and 
+70 billion—as well as pretrained and fine-tuned variations. Meta AI calls Llama 2 open source, but there are some who disagree, given that it includes restrictions on acceptable use. A commercial license is available in addition to a community license. 
+Llama 2 is an auto-regressive language model that uses an optimized Transformer architecture. The tuned versions use supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align to human preferences for helpfulness and safety. Llama 2 is currently English-only. The model card includes benchmark results and carbon footprint stats. The research paper, Llama 2: Open Foundation and Fine-Tuned Chat Models, offers additional detail. 
+Claude: 
+Claude 3.5 is the current leading version. 
+Anthropic’s Claude 2, released in July 2023, accepts up to 100,000 tokens (about 70,000 words) in a single prompt, and can generate stories up to a few thousand tokens. Claude can edit, rewrite, summarize, classify, extract structured data, do Q&A based on the content, and more. It has the most training in English, but also performs well in a range of other common languages, and still has some ability to communicate in less common ones. Claude also has extensive knowledge of programming languages. 
+Claude was constitutionally trained to be Helpful, Honest, and Harmless (HHH), and extensively red-teamed to be more harmless and harder to prompt to produce offensive or dangerous output. It doesn’t train on your data or consult the internet for answers, although you can provide Claude with text from the internet and ask it to perform tasks with that content. Claude is available to users in the US and UK as a free beta, and has been adopted by commercial partners such as Jasper (a generative AI platform), Sourcegraph Cody (a code AI platform), and Amazon Bedrock. 
 
-
-# Result
+## Conclusion: 
+As we’ve seen, large language models are under active development at several companies, with new versions shipping more or less monthly from OpenAI, Google AI, Meta AI, and Anthropic. While none of these LLMs achieve true artificial general intelligence (AGI), new models mostly tend to improve over older ones. Still, most LLMs are prone to hallucinations and other ways of going off the rails, and may in some instances produce inaccurate, biased, or other objectionable responses to user prompts. In other words, you should use them only if you can verify that their output is correct. 
+ 
